@@ -1,4 +1,13 @@
-# PHP 8 development environment with PHP-FPM, Nginx and MySQL, using Docker and Docker Compose
+# docker-php-lab 
+
+## Stack
+
+- PHP 8 PHP-FPM
+- Nginx
+- MySQL
+- Docker & Docker Compose.
+
+## How to use it?
 
 You need to have Docker and Docker Compose installed on your server to proceed using this PHP environment.
 
@@ -8,7 +17,7 @@ The following three separate service containers will be used:
 - A `db` service running MySQL.
 - An `nginx` service that uses the `app` service to parse PHP code before serving the application to the final user.
 
-## Running the environment
+### Running the environment
 
 - Set the MySQL environment variables creating a `.env` file based on the `.env.example` file.
 
@@ -69,5 +78,9 @@ Get Local IP from mac
 ```sh
 ipconfig getifaddr en0
 ```
+
+---
+
+### Credits
 
 Docker configuration inspired in: https://github.com/dyarleniber/docker-php.git
